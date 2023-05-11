@@ -19,5 +19,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('secall/', views.getAllCompanyInfo, name="getAllCompanyInfo"),
     path('sec/', views.getCompanyInfo, name="getCompanyInfo"),
 ]
